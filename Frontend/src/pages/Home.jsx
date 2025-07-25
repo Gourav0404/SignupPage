@@ -15,7 +15,7 @@ const Home = () => {
     localStorage.removeItem('loggedInUser');
     handleSuccess('user logout successfully');
     setTimeout(() => {
-      navigate('/login');
+      navigate('/signup');
     }, 1000);
   }
   return (
