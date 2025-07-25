@@ -17,7 +17,7 @@ function App() {
         <div className="w-full max-w-md bg-white shadow-md rounded-xl p-6">
           <ReffershHandler setIsAuth={setIsAuth} />
           <Routes>
-            <Route path='/' element={<Navigate to='/login' />} />
+            <Route path='/' element={<Navigate to='/signup' />} />
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup/>} />
             <Route path='/home' element={<PrivateRoute element={<Home />} />} />
