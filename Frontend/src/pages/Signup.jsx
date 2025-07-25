@@ -27,7 +27,7 @@ const Signup = () => {
     }
     try {
       // const url = "http://localhost:3000/auth/signup"
-      const response = await fetch('http://localhost:3000/auth/signup', {
+      const response = await fetch('hhttps://signuppage-srmh.onrender.com/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
