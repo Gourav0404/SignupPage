@@ -1,10 +1,7 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-mongoose.connect(process.env.MONGOOSE);
-console.log('database is connect');
-
-
-const userSchema = mongoose.Schema({
+const userSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -18,7 +15,8 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true
   }
-})
+});
+
 
 const userModel = mongoose.model('user', userSchema);
 
